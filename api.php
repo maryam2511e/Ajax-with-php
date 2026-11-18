@@ -4,6 +4,8 @@ header('Content-Type: application/json');
 $limit = isset($_GET['limit']) ? (int) $_GET['limit'] : 4;
 $skip = isset($_GET['skip']) ? (int) $_GET['skip'] : 0;
 
+echo "Hwello";
+
 $host = 'https://dummyjson.com';
 $endpoint = '/products';
 $query = http_build_query([
